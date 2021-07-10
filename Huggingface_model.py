@@ -1,8 +1,17 @@
 import json
 import requests
+import random
 
 API_URL = "https://api-inference.huggingface.co/models/facebook/blenderbot-400M-distill"
-headers = {"Authorization": "Bearer api_VwEDgHShdakgiOvZvfgKDIHPTkhgqODdyK"}
+
+token1= "Bearer api_aMoZCmkIGkZlrwkLeYEPPsAdisFKPjMWwb"
+token2= "Bearer api_pgkgzCiLmgtLELBJFgDzCVJldVtEvvldAP"
+token3= "Bearer api_OiAAZDZhNWlWYoQtKhiqrGJnnNkRjgWXHW"
+token4= "Bearer api_VwEDgHShdakgiOvZvfgKDIHPTkhgqODdyK"
+
+tok = random.choice([token1,token2,token3,token4])
+
+headers = {"Authorization": tok }
 
 def query(payload):
 	data = json.dumps(payload)
