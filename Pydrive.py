@@ -23,9 +23,9 @@ def uploader_func(current_dir):
     # of the desired directory
     for x in os.listdir(path):
 
-	    f = drive.CreateFile({'title': x})
-	    f.SetContentFile(os.path.join(path, x))
-	    f.Upload()
+        f = drive.CreateFile({'title': x})
+        f.SetContentFile(os.path.join(path, x))
+        f.Upload()
     f = None
 	# Due to a known bug in pydrive if we
 	# don't empty the variable used to
