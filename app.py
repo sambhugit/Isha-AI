@@ -31,7 +31,7 @@ import Google_drive_downloader
 
 app = Flask('Isha',template_folder='template')
 
-current_dir = os.path.dirname(os.path.realpath('Flask.py'))
+current_dir = os.path.dirname(os.path.realpath('app.py'))
 
 emotion_var = [0]*8
 user_chat_list = []
@@ -40,7 +40,7 @@ hugging_face_model_list = []
 #first_message = 0
 
 # load chatbot dataset
-with open(os.path.join(current_dir,'intents_28062021.json'), errors = "ignore") as file:
+with open(os.path.join(current_dir,'intents.json'), errors = "ignore") as file:
     data = json.load(file)
 
 # load chatbot model
