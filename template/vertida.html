@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/ishafirstpage.css') }}">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+        
+	<title>Isha- AI</title>
+</head>
+
+<body>
+	<div class="v3_2">
+		<div class="v9_11">
+			<div class="v9_19">
+<!-- 				<div class="v8_4"></div>
+				<span class="v9_18">Chat</span> -->
+			</div>
+			<div class="v9_13">
+				<div class="v9_2">
+					<div class="v9_15"></div>
+					<div class="v9_3">
+						<span class="v3_12">Oh!, why dont you read a book?</span>
+					</div>
+					<div class="v9_8"></div>
+				</div>
+				<div class="v9_4"><div class="v9_5">
+					<span class="v9_6">I feel very bored these days</span>
+				</div>
+				<div class="v9_7"></div>
+			</div>
+		</div>
+    <form name="user input" action='/form' method = "post">
+		<div class="v9_20">
+			<p>Please select your gender:</p>
+		 	<input required type="radio" id="male" name="gender" value="MALE">
+		 	<label for="male">Male</label><br>
+		 	<input required type="radio" id="female" name="gender" value="FEMALE">
+		 	<label for="female">Female</label><br>
+		 	<input required type="radio" id="other" name="gender" value="OTHERS">
+		 	<label for="other">Other</label>
+		</div>
+		<div class="v9_21">
+			<p>Please select your age group:</p>
+		 	<input required type="radio" id="below20" name="age" value="below 20">
+		 	<label for="below20">Below 20</label><br>
+		 	<input required type="radio" id="20to30" name="age" value="20 to 30">
+		 	<label for="20to30">20 to 30</label><br>
+		 	<input required type="radio" id="30to50" name="age" value="30 to 50">
+		 	<label for="30to50">30 to 50</label><br>
+		 	<input required type="radio" id="above50" name="age" value="above 50">
+		 	<label for="above50">Above 50</label>
+		</div>
+		<div class="v9_22">
+			<p>Please select your Covid status:</p>
+		 	<input required type="radio" id="Positive" name="covid" value="Currently covid positive">
+		 	<label for="Currently_Positive">Currently Covid Positive</label><br>
+		 	<input required type="radio" id="Negative" name="covid" value="Had_Covid_Before">
+		 	<label for="Had_Covid_Before">Recovered from Covid before</label><br>
+		 	<input required type="radio" id="nocovid" name="covid" value="Never_had_Covid">
+		 	<label for="Never_had_Covid">Never had Covid</label>
+		</div>
+    <div class="v9_19">
+      <input type="submit" class="v9_18" value="Chat">
+    </div>
+	</div>
+</form>
+	<div class="v9_12">
+		<span class="v9_17">
+			<h1>ISHA- AI</h1>
+			<h2>Your Virtual friend</h2>
+			<p>ISHA is an artificial intelligent chatbot developed by students of College of Engineering, Trivandrum.</p>
+			<p>We intend to help you by providing an AI friend for you to talk and share your feelings with.</p>
+			<p>Please give your Gender, Age group, Covid Status and click the chat button to start chatting with ISHA.</p>
+                        <h6><i> Your chats will be anonymous and privacy protected</i> &#128272 </h6>
+                        <h6><i>The data you give in the form will be anonymous and used only for research purposes. Feel free to chat openly</i>&#128522</h6>
+                    
+		</span>
+	</div>
+</body>
+</html>
