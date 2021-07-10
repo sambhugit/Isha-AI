@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify, render_template
-import keras
 import json
 import os
 import numpy as np
