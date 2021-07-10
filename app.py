@@ -6,8 +6,8 @@ import datetime
 from datetime import datetime
 import Huggingface_model as hf
 import string
-from tensorflow import keras
-from keras.models import load_model
+import tensorflow
+from tensorflow.keras.models import load_model
 from sklearn.preprocessing import LabelEncoder
 import random
 import pickle
