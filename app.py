@@ -13,7 +13,6 @@ import random
 import pickle
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
-import nltk
 import matplotlib
 from matplotlib import pyplot as plt
 import Pydrive as pdd
