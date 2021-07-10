@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+  border: 0px;margin: 0px;
+            padding:0px;
+}
+body {
+  font-size: 14px;
+  border: 0px;margin: 0px;
+            padding:0px;
+  
+
+}
+iframe
+{
+    display: block; 
+    border: 0px;
+    margin: 0px auto;
+    padding:0px;
+}
+
+.v15_131 {
+  width: 100%;
+  height: 775px;
+  /*background: url("../images/v15_131.png");*/
+  background-image: url("../images/whatsapp_wallpaper-v.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v15_132 {/*box2*/
+  width: 718px;
+  height: 100px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 560px;
+  left: 158px;
+  border: 3px solid rgba(170,176,183,1);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
+.v15_133 { /*input1*/
+  width: 718px;
+  height: 120px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  border: 3px solid rgba(170,176,183,1);
+  outline: none;/*changed*/
+  
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+
+::placeholder {/*message2 */
+  width: 500px;
+  color: rgba(170,176,183,1); 
+  position: absolute;
+  top: 50px;
+  left: 69px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 30px;
+  opacity: 1;
+  text-align: left;
+}
+.v15_135 {/*arrow*/
+  width: 69px;
+  height: 80px;
+  /*background: rgba(255,255,255,1);*/
+  background: rgba(170,176,183,1);
+  opacity: 1;
+  position: absolute;
+  top: 30px;
+  left: 606px;
+  overflow: hidden;
+}
+
+.v15_136 {
+  width: 69px;
+  height: 80px;
+ /*background: url("../images/v15_136.png");*/
+ background-image: url("../images/white.jpg");
+ 
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.v15_137 {/* arrow*/
+  width: 46px;
+  height: 60px;
+  background: rgba(170,176,183,1);
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+.v15_138 {/*box1*/
+  width: 718px;
+  height: 182px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: absolute;
+  top: 200px;
+  left: 587px;
+ 
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+}
+.v15_139 {/*input2*/
+  width: 550px;
+  height: 150px;
+  background: rgba(255,255,255,1);
+  opacity: 1;
+  position: relative;
+  top: -22px;
+  left: 30px;
+  border: 0px solid rgba(170,176,183,1);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  outline: none;/* changed*/
+  font-size: 25px;
+}
+
+.v15_140 {/*message1*/
+  width: 600px;
+  color: rgba(3,3,3, 0.8);
+  position: absolute;
+  top: 55px;
+  left: 50px;
+  font-family: Inter;
+  font-weight: Medium;
+  font-size: 36px;
+  opacity: 1;
+  text-align: left;
+  
+  
+}
+
+
+/*end chat button*/
+.v15_143
+{
+  
+  background-color: rgba(220,24,24,0.8);
+  color: rgba(255,254,254,1);
+  position: absolute;
+  top: 650px;
+  left: 1028px;
+  width: 212px;
+  height: 103px;
+  font-family: Open Sans;
+  font-weight: Bold;
+  font-size: 36px;
+  opacity: 1;
+  text-align: center;
+  border: 2px solid rgba(0,0,0,1);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+ 
+ }
+ 
+
+ 
+.v15_144 { /*bot image circle*/
+  width: 123px;
+  height: 121px;
+ /* background: rgba(196,196,196,1);*/
+ background-image: url("../images/robot.png");
+
+  opacity: 1;
+  position: absolute;
+  top: 100px;
+  left: 480px;
+  border-radius: 50%;
+}
