@@ -43,7 +43,7 @@ with open(os.path.join(current_dir,'intents.json'), errors = "ignore") as file:
 
 # load chatbot model
 
-model_chat = keras.models.load_model(os.path.join(current_dir,'Model_3.hdf5'))
+model_chat = load_model(os.path.join(current_dir,'Model_3.hdf5'))
 
 # load chatbot tokenizer object
 with open(os.path.join(current_dir,'tokenizer_emo.pickle'), 'rb') as handle:
@@ -92,11 +92,11 @@ def sentiment_call(inp):
     result = [0]
     outcome_labels = [0,1]
 
-    print("inp =",inp,"\n")
-    print("list_to_be_analysed=",list_to_be_analysed,"\n")
+    #print("inp =",inp,"\n")
+    #print("list_to_be_analysed=",list_to_be_analysed,"\n")
 
     for m in list_to_be_analysed:
-        print("m=",m,"\n")
+        #print("m=",m,"\n")
         s = [m]
         seq = tokenizer_sa.texts_to_sequences(s)
         padded = pad_sequences(seq, maxlen=max_review_length) 
@@ -143,19 +143,19 @@ def results():
     fig = plt.figure()
     plt.pie(emotion_var,labels = mylabels, colors = mycolors)
     plt.legend()
-    fig.savefig(os.path.join(current_dir,"client_emotions\image.png"))
-    im = Image.open(os.path.join(current_dir,"client_emotions\image.png"))
+    fig.savefig(os.path.join(current_dir,"client_emotions/image.png"))
+    im = Image.open(os.path.join(current_dir,"client_emotions/image.png"))
     data_img = io.BytesIO()
     im.save(data_img, "PNG")
     encoded_img_data = base64.b64encode(data_img.getvalue())
-    path = os.path.join(current_dir,"client_emotions\image.png")
+    path = os.path.join(current_dir,"client_emotions/image.png")
     os.remove(path)
-    with open(os.path.join(current_dir,"client_datax\Client_Data%s.txt" %date_time), 'a') as handle:
+    with open(os.path.join(current_dir,"client_datax/Client_Data%s.txt" %date_time), 'a') as handle:
          handle.write("\n" + "emotion_var=" + str(emotion_var) +"\n" + "sentiment_scores="+ str(sentiment_scores)+"\n")
     pdd.uploader_func(current_dir)
     #path_data = os.path.join(current_dir,"client_datax")
     #path_data = os.path.join(current_dir,"client_datax\Client_Data%s.txt"%date_time)
-    os.remove(os.path.join(current_dir,"client_datax\Client_Data%s.txt"%date_time))
+    os.remove(os.path.join(current_dir,"client_datax/Client_Data%s.txt"%date_time))
     return render_template('graph.html', graph = encoded_img_data.decode('utf-8') , user_sentiment = user_sentiment )
 
 # Chat function
@@ -184,7 +184,7 @@ def chat():
     user_chat_processed = punct_remover(user_chat_processed)
 
 
-    result = model_chat.predict(keras.preprocessing.sequence.pad_sequences(tokenizer.texts_to_sequences([user_chat_processed]),
+    result = model_chat.predict(pad_sequences(tokenizer.texts_to_sequences([user_chat_processed]),
                                               truncating='post', maxlen=max_len))                                  
     tag = lbl_encoder.inverse_transform([np.argmax(result)])
 
@@ -221,7 +221,7 @@ def chat():
         checker = 0
     
     hugging_face_model_list.append(reply_bot)
-    print(reply_bot)
+    #print(reply_bot)
 
 
 
@@ -247,8 +247,8 @@ def form():
     global date_time
     date_time = date_time_temp
 
-    y = os.path.join(current_dir,"client_datax\Client_Data %s.txt" % date_time)
-    print(y)
+    y = os.path.join(current_dir,"client_datax/Client_Data %s.txt" % date_time)
+    #print(y)
     file = open( y, 'w')  
     file.write(gender_value + "\n"  + age_value + "\n" + covid_value)
 
