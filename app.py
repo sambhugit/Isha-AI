@@ -23,7 +23,7 @@ import base64
 import io
 import re
 import time
-import Google_drive_downloader 
+#import Google_drive_downloader 
 
 
 
@@ -60,7 +60,7 @@ max_review_length = 200
 
 # load sentiment analysis model
 weight_path = os.path.join(current_dir,'sentiment_weight_file.hdf5')
-model_sa = load_model(weight_path)
+#model_sa = load_model(weight_path)
 
 # load sentiment analysis tokenizer object
 with open(os.path.join(current_dir,'tokenizer_sa_new1.pickle'), 'rb') as handle:
