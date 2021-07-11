@@ -12,8 +12,8 @@ from keras.models import load_model
 from sklearn.preprocessing import LabelEncoder
 import random
 import pickle
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
+from keras.preprocessing.text import Tokenizer
+from keras.preprocessing.sequence import pad_sequences
 import matplotlib
 from matplotlib import pyplot as plt
 import Pydrive as pdd
