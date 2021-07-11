@@ -8,7 +8,7 @@ import Huggingface_model as hf
 import string
 import tensorflow
 import keras
-from keras.models import load_model
+from tensorflow.keras.models import load_model
 from sklearn.preprocessing import LabelEncoder
 import random
 import pickle
@@ -23,7 +23,7 @@ import base64
 import io
 import re
 import time
-#import Google_drive_downloader 
+import Google_drive_downloader 
 
 
 
@@ -44,7 +44,7 @@ with open(os.path.join(current_dir,'intents.json'), errors = "ignore") as file:
 
 # load chatbot model
 
-#model_chat = load_model(os.path.join(current_dir,'Model_3.hdf5'))
+model_chat = load_model(os.path.join(current_dir,'Emotion_detector.hdf5'))
 
 # load chatbot tokenizer object
 with open(os.path.join(current_dir,'tokenizer_emo.pickle'), 'rb') as handle:
