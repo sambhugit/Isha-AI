@@ -44,7 +44,7 @@ with open(os.path.join(current_dir,'intents.json'), errors = "ignore") as file:
 
 # load chatbot model
 
-model_chat = load_model(os.path.join(current_dir,'Model_3.hdf5'))
+#model_chat = load_model(os.path.join(current_dir,'Model_3.hdf5'))
 
 # load chatbot tokenizer object
 with open(os.path.join(current_dir,'tokenizer_emo.pickle'), 'rb') as handle:
