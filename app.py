@@ -6,14 +6,14 @@ import datetime
 from datetime import datetime
 import Huggingface_model as hf
 import string
-#import tensorflow
+import tensorflow
 import keras
 from keras.models import load_model
 from sklearn.preprocessing import LabelEncoder
 import random
 import pickle
-from keras.preprocessing.text import Tokenizer
-from keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.preprocessing.text import Tokenizer
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 import matplotlib
 from matplotlib import pyplot as plt
 import Pydrive as pdd
